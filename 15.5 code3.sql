@@ -1,0 +1,15 @@
+USE AdventureWorks2012;
+GO
+IF OBJECT_ID ('sp_ErrorInfo','P') IS NOT NULL
+DROP PROCEDURE sp_ ERRORInfo;
+GO
+CREATE PROCEDURE sp_ErrorInfo;
+AS
+SELECT
+ERROR_NUMBER () AS ErrorNumber,
+ERROR_SEVERITY () AS ErrorSeverity,
+ERROR_STATE () AS ErrorState,
+ERROR_PROCEDURE () AS ErrorProceDure,
+ERROR_LINE () AS ErrorLine,
+ERROR_MESSAGE () AS ErrorMessage;
+GO

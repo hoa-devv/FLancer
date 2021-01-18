@@ -1,0 +1,7 @@
+BEGIN TRANSACTION;
+GO
+DELETE FROM HumanResources.JobCandidate
+WHERE JobCandidateID = 11;
+GO 
+COMMIT  TRANSACTION;
+GO

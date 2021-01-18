@@ -1,0 +1,2 @@
+USE[CUST_DB]
+DROP TABLE [dbo].[Table_1]

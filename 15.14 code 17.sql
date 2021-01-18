@@ -1,0 +1,15 @@
+IF OBJECT_ID (N'sp _Example', N'P')IS NOT NULL
+DROP PROCEDURE sp_Example
+GO 
+CREATE PROCEDURE sp_Example
+AS 
+SELECT * FROM Nonexisxistent;
+GO
+BEGIN TRY
+EXECUTE sp_Example;
+END TRY
+BEGIN CATCH
+SELECT
+ERROR_NUMBER () AS ErrorNumber,
+ERROR_MESSAGE () AS ErrorMessage;
+END CATCH;
