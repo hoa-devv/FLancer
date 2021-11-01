@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Demo.Pages.Lab_S1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Demo.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="80">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="0,100,0,0">
+            <TextBox x:Name="inputEmailNhan" Margin="20" HorizontalAlignment="Center" Width="350" Height="50" TextWrapping="Wrap" PlaceholderText="EmailNhan"/>
+            <TextBox x:Name="inputTieuDeThu" Margin="20" HorizontalAlignment="Center" Width="350" Height="50" TextWrapping="Wrap" PlaceholderText="TieuDeThu"/>
+            <TextBox x:Name="inputNoiDungThu" Margin="20" HorizontalAlignment="Center" Width="350" Height="50" TextWrapping="Wrap" PlaceholderText="NoiDungThu"/>
+            <Button Click="Button_Click"  Margin="20" Background="Red" HorizontalAlignment="Center" Width="150" Content="Submit"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="0,100,0,0">
+            <TextBlock x:Name="txtFullname" Text="Email Nhan" FontSize="20" Margin="150,20,0,0"/>
+            <TextBlock x:Name="txtEmail" Text="Tieu De Thu" FontSize="20" Margin="150,20,0,0"/>
+            <TextBlock x:Name="txtPhone" Text="Noi Dung Thu" FontSize="20" Margin="150,20,0,0"/>
+        </StackPanel>
+    </Grid>
+</Page>
