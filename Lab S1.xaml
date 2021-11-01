@@ -20,9 +20,9 @@
             <Button Click="Button_Click"  Margin="20" Background="Red" HorizontalAlignment="Center" Width="150" Content="Submit"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Margin="0,100,0,0">
-            <TextBlock x:Name="txtFullname" Text="Email Nhan" FontSize="20" Margin="150,20,0,0"/>
-            <TextBlock x:Name="txtEmail" Text="Tieu De Thu" FontSize="20" Margin="150,20,0,0"/>
-            <TextBlock x:Name="txtPhone" Text="Noi Dung Thu" FontSize="20" Margin="150,20,0,0"/>
+            <TextBlock x:Name="txtEmailNhan" Text="Email Nhan" FontSize="20" Margin="150,20,0,0"/>
+            <TextBlock x:Name="txtTieuDeThu" Text="Tieu De Thu" FontSize="20" Margin="150,20,0,0"/>
+            <TextBlock x:Name="txtNoiDungThu" Text="Noi Dung Thu" FontSize="20" Margin="150,20,0,0"/>
         </StackPanel>
     </Grid>
 </Page>

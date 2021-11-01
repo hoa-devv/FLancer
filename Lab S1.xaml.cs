@@ -29,7 +29,13 @@ namespace Demo.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            var EmailNhan =inputEmailNhan.Text;
+            var TieuDeThu = inputTieuDeThu.Text;
+            var NoiDungThu = inputNoiDungThu.Text;
 
+            txtEmailNhan.Text = EmailNhan;
+            txtTieuDeThu.Text =TieuDeThu;
+            txtNoiDungThu.Text = NoiDungThu;
         }
     }
 }
